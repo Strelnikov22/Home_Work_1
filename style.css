@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(62, 17, 121);
+}
+
+/* Голова */
+
+.head{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(214, 61, 82);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 100% 100% 35% 35%;
+    overflow: hidden;
+}
+
+/* Применяем обтекание для всех частей головы */
+
+.hair,.eyes,.mouth-block{
+    float: left;
+    width: 100%;
+}
+
+/* Общие элементы прически и глаз */
+
+.hair>div,
+.eyes>div{
+    background-color: rgb(248, 234, 196);
+    float: left;
+    border-radius: 100%;
+}
+
+/* Прическа */
+
+.hair>div{
+    width: 250px;
+    height: 250px;
+    top: -125px;
+    position: relative;
+}
+
+/* Глаза */
+
+.eyes>div{
+    width: 150px;
+    height: 150px;
+    margin: 0 50px;
+}
+
+/* Рот */
+
+.mouth-block>div{
+    background-color: rgb(248, 234, 196);
+    width: 80px;
+    height: 20px;
+    margin: 0 auto;
+    border-radius: 7px;
+}
